@@ -1,0 +1,30 @@
+ALGORITHM sentence
+VAR
+    sentence: STRING;
+    i,word,char,vowel:INTEGER;
+BEGIN
+    write ("write your sentence:")
+    read(sentence)
+    FOR i FROM 0 TO sentence.length-1 STEP 1  DO
+        IF (sentence[i]=" ") THEN
+            word:=word+1
+            // the number of words
+            END_IF
+            IF (sentence[i]<> ".") THEN
+                char:=char+1
+
+            END_IF
+            SWITCH (sentence[i]) DO
+                case value "a" : vowel+1 break
+                case value "e": vowel+1 break
+                case value "i": vowel+1 break
+                case value "u": vowel+1 break
+                case value "y": vowel+1 break
+                case value "o": vowel+1 break 
+                // determiner le nombre de voyelle 
+            END_SWITCH
+            write(word)
+            write(char)
+            write(vowel)
+    END_FOR
+END
